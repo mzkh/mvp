@@ -8,7 +8,27 @@ export default function Home() {
       <Head>
         <title>Create MVP product fast</title>
         <link rel="icon" href="/archery.svg" />
+
+            {/* Global Site Tag (gtag.js) - Google Analytics */}
+            <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-6ELYFH2L1N`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6ELYFH2L1N', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
       </Head>
+
+      
 
       <main>
         <div>
